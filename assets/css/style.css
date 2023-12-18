@@ -1099,6 +1099,15 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
+.text-center button {
+  border-radius: 5px;
+  border: none;
+}
+
+.text-center button:hover {
+  background-color: #dd5a92;
+  text-decoration: none;
+}
 
 /*--------------------------------------------------------------
 # Footer
