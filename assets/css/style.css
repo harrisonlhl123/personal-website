@@ -561,6 +561,7 @@ section {
   height: 50px;
   display: block;
   background: none;
+  margin-bottom: 20px; /* Add some space between progress bars */
 }
 
 .skills .progress .skill {
@@ -571,6 +572,7 @@ section {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #2c4964;
+  font-size: 16px;
 }
 
 .skills .progress .skill .val {
@@ -580,14 +582,27 @@ section {
 
 .skills .progress-bar-wrap {
   background: #fbeaf1;
+  border-radius: 5px; /* Add some rounded corners to the progress bar wrap */
+  overflow: hidden; /* Hide overflow to ensure rounded corners display correctly */
 }
 
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
+  width: 100%; /* Fill the entire width of the progress bar wrap */
+  height: 100%;
+  transition: width 0.9s; /* Apply transition to width property only */
   background-color: #dd5a92;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-lg-3 {
+  flex: 0 0 24%; /* Adjust the width of each column to fit 4 in a row */
+}
+
 
 /*--------------------------------------------------------------
 # Resume
