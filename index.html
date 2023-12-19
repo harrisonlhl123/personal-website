@@ -651,7 +651,7 @@
           </div>
           <div class="col-lg-5 col-md-8">
             <p>Send me a message!</p>
-            <form action="https://formsubmit.co/liangharrison123@gmail.com" method="post" role="form" class="php-email-form">
+            <!-- <form action="https://formsubmit.co/liangharrison123@gmail.com" method="post" role="form" class="php-email-form">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
@@ -666,10 +666,23 @@
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <!-- <div class="error-message"></div> -->
+                <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send</button></div>
+              <input type="hidden" name="_captcha" value="false">
+            </form> -->
+            <form action="https://formsubmit.co/liangharrison123@gmail.com" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <button type="submit">Send</button>
               <input type="hidden" name="_captcha" value="false">
             </form>
           </div>
